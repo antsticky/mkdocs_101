@@ -1,0 +1,29 @@
+site_name: My Python Project
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.top
+  toc:
+    depth: 2
+
+
+plugins:
+  - mkdocstrings:
+      handlers:
+        python:
+          options:
+            show_root_heading: true
+            show_source: true
+            heading_level: 3
+            extra:
+              render_module_header: true
+
+
+
+
+
+nav:
+  - Home: index.md
+  - API: api.md
+  - Frontend: frontend.md
